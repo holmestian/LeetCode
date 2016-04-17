@@ -1,5 +1,11 @@
 package edu.sjtu.holmes.sort;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * Created by holmes on 16/4/8.
  */
@@ -15,12 +21,13 @@ public class AbstractSort {
     }
 
     public static void main(String[] args){
-        int[] test = {1,3,6,2,9,1,23,1,7,56};
+        int[] test = {11,3,6,2,9,1,23,1,7,56,34};
         //SelectSort.sort(test);
         //InsertSort.sort(test);
         //ShellSort.sort(test);
         //QuickSortBase.sort(test);
-        MergeSort.sort(test);
+        //MergeSort.sort(test);
+        HeapSort.sort(test);
         print(test);
     }
 
